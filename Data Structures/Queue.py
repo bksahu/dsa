@@ -38,4 +38,7 @@ class Queue:
 if __name__ == "__main__":
     q = Queue()
     q.enqueue(3)
+    q.enqueue(4)
+    q.show()
+    q.dequeue()
     q.show()
