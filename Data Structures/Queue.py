@@ -3,6 +3,8 @@
 """ This script implements Queue.
 """
 
+from __future__ import print_function
+
 class Queue:
     def __init__(self):
         self.queue = []

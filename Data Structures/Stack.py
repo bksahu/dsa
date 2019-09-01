@@ -3,6 +3,8 @@
 """ This script implements Stacks.
 """
 
+from __future__ import print_function
+
 class Stack:
     """ Class implementing stack """
     def __init__(self):
