@@ -5,9 +5,8 @@ Implementation of Data Structures &amp; Algorithms
 - [x] Linked List
 - [x] Stack
 - [x] Queue
-- [ ] Hash Table & Hash Set
+- [x] Graphs
 - [ ] Heap
-- [ ] Graphs
 - [ ] Tree
 - [ ] Binary Tree
 - [ ] Binary Search Tree
