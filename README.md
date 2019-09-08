@@ -13,8 +13,6 @@ Implementation of Data Structures &amp; Algorithms
 - [ ] Trie
 - [ ] Graphs
 - [x] Binary Search
-- [ ] Breadth First Search
-- [ ] Depth First Search
 - [ ] Merge Sort
 - [ ] Quick Sort
 - [ ] Selection Algorithm
