@@ -12,6 +12,9 @@ Implementation of Data Structures &amp; Algorithms
 - [ ] Binary Search Tree
 - [ ] Trie
 - [ ] Graphs
+- [ ] Dijkstra Algorithms
+- [ ] AVL
+- [ ] Red black Trees
 - [x] Binary Search
 - [ ] Merge Sort
 - [ ] Quick Sort
