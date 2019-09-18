@@ -7,7 +7,7 @@ Implementation of Data Structures &amp; Algorithms
 - [x] Queue
 - [x] Graphs
 - [ ] Heap
-- [ ] Binary Search Tree
+- [x] Binary Search Tree
 - [ ] Trie
 - [ ] Graphs
 - [ ] Dijkstra Algorithms
