@@ -15,4 +15,5 @@ Implementation of Data Structures &amp; Algorithms
 - [x] Binary Search
 - [ ] Merge Sort
 - [ ] Quick Sort
-- [ ] Selection Algorithm
+- [ ] Selection Sort
+- [ ] Bubble Sort
