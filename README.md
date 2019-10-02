@@ -8,7 +8,7 @@ Implementation of Data Structures &amp; Algorithms
 - [x] Graphs
 - [x] Heap
 - [x] Binary Search Tree
-- [ ] Trie
+- [x] Trie
 - [ ] Dijkstra Algorithms
 - [ ] AVL
 - [ ] Red black Trees
