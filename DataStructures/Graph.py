@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-""" This script implements Graphs.
+""" This script implements unweighted Graphs.
 """
 
 class Graph:
