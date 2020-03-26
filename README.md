@@ -18,5 +18,4 @@ Implementation of Data Structures &amp; Algorithms
 - [ ] Dijkstra Algorithms
 - [ ] AVL
 - [ ] Red black Trees
-- [x] Segment Trees
 - [ ] Fenwick Trees
