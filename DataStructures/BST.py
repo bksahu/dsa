@@ -39,6 +39,41 @@ class Tree:
         if node.right:
             self.inorderPrint(node.right)
 
+    def levelOrderPrint(self):
+        """
+            This approach uses Queue to iterate through the nodes but using a single while loop. 
+            It tracks levels using the following algorithm:
+            1. Set two flags
+                currentCount = 0 // No. of children to be processed that are currently in the Queue
+                levelCount = 1 // Current level
+            2. When append new child to Queue, increment currentCount by 1.
+            3. When a parent is processed (i.e all the children of the parent is appended to Queue and
+               parent is appended to the queue), decreament levelCount by 1.
+            4. If levelCount is 0
+                1. append temp to res and remove everything in temp
+                2. swap currentCount and levelCount
+        """
+
+
+        queue = [self.root]
+        level = 1
+        totalChildren = 0
+
+        while queue:
+            curr = queue.pop(0)
+            if curr.left:
+                queue.append(curr.left)
+                totalChildren += 1
+            if curr.right:
+                queue.append(curr.right)
+                totalChildren += 1
+            print(curr.key, end=" ")
+            level -= 1
+            if level == 0:
+                print()
+                level = totalChildren
+                totalChildren = 0
+
     @staticmethod
     def minInorder(node):
         node = node.right
@@ -86,4 +121,5 @@ if __name__ == "__main__":
     t.inorderPrint(t.getRoot())
     print("Deleting..")
     t.delete(6, t.getRoot())
-    t.inorderPrint(t.getRoot())
+    # t.inorderPrint(t.getRoot())
+    t.levelOrderPrint()
