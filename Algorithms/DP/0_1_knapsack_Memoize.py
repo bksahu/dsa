@@ -36,7 +36,7 @@ def knapSack(W, wt, val, n):
 if __name__ == "__main__":
     # initialze a cache W*n for memoize
     global cache
-    cache = [[-1]*102]*1002
+    cache = [[-1 for x in range(102)] for x in range(1002)]
 
     # Dummy test case
     val = [60, 100, 120] 
