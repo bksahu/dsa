@@ -8,15 +8,7 @@ Output: 3
 All the possible subsets are {1, 2, 3},
 {1, 2, 3} and {3, 3}
 """
-"""
-Given a set of non-negative integers, and a value sum, determine if there is a
-subset of the given set with sum equal to given sum.
 
-Example:
-
-Input:  set[] = {3, 34, 4, 12, 5, 2}, sum = 9
-Output:  True  //There is a subset (4, 5) with sum 9.
-"""
 
 def count_subset_sum(arr, sum):
     # Return True if possible else False
@@ -33,6 +25,6 @@ def count_subset_sum(arr, sum):
     return t[-1][-1]
 
 if __name__ == "__main__":
-    arr = [1, 1, 1, 1]
-    sum = 1
+    arr = [1, 1, 1, 1, 1]
+    sum = 3
     print(count_subset_sum(arr, sum))
