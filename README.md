@@ -15,7 +15,6 @@ Implementation of Data Structures &amp; Algorithms
 - [x] Selection Sort
 - [ ] Merge Sort
 - [ ] Quick Sort
-- [ ] Dijkstra Algorithms
+- [ ] Dijkstra Algorithm
 - [ ] AVL
 - [ ] Red black Trees
-- [ ] Fenwick Trees
