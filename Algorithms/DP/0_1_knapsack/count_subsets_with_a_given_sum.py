@@ -21,10 +21,10 @@ def count_subset_sum(arr, sum):
                 t[i][j] = t[i-1][j] + t[i-1][j-arr[i-1]]
             else:
                 t[i][j] = t[i-1][j]
-    
+
     return t[-1][-1]
 
 if __name__ == "__main__":
-    arr = [1, 1, 1, 1, 1]
-    sum = 3
+    arr = [1, 2, 3, 3]
+    sum = 6
     print(count_subset_sum(arr, sum))
