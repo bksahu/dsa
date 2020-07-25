@@ -2,11 +2,14 @@
 Implementation of dijkstra shortest path alogithm with priority queue 
 which works only on non-negative DAGs.
 
+Tip: While dealing with undirected graph treat a edge as two edges i.e.
+one from A to B and another from B to A. 
+
 Time Complexity: O(ElogV)
 """
 
 from heapq import heappush, heappop
-from Dijkstra import DAG
+from dijkstra import DAG
 
 class Dijkstra(DAG):
     def __init__(self):
