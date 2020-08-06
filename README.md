@@ -32,7 +32,7 @@ Implementation of Data Structures &amp; Algorithms and common coding patterns.
 - [x] Fast & Slow pointers
 - [x] Merge Intervals
 - [x] Cyclic Sort
-- [ ] In-place Reversal of a LinkedList
+- [x] In-place Reversal of a LinkedList
 - [ ] Breadth First Search
 - [ ] Depth First Search
 - [ ] Two Heaps
