@@ -138,3 +138,6 @@ venv.bak/
 *.exe
 *.out
 *.app
+
+# Codespace
+pythonenv3.8

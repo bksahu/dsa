@@ -10,7 +10,7 @@
         },
         {
             "label": "Run File",
-            "command": "python ${file}",
+            "command": "python3.8 ${file}",
             "type": "shell",
             "group": {
                 "kind": "build",
