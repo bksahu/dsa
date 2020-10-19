@@ -33,9 +33,9 @@ Implementation of Data Structures &amp; Algorithms and common coding patterns.
 - [x] Merge Intervals
 - [x] Cyclic Sort
 - [x] In-place Reversal of a LinkedList
-- [ ] Breadth First Search
-- [ ] Depth First Search
-- [ ] Two Heaps
+- [x] Breadth First Search
+- [x] Depth First Search
+- [x] Two Heaps
 - [ ] Subsets
 - [ ] Modified Binary Search
 - [ ] Bitwise XOR
