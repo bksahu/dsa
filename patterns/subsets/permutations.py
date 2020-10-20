@@ -18,7 +18,7 @@ Input: [1,3,5]
 Output: [1,3,5], [1,5,3], [3,1,5], [3,5,1], [5,1,3], [5,3,1]
 """
 
-def find_permutations(nums):
+def find_permutations_recursively(nums):
     results = []
     backtrack(nums, [], results)
     return results
@@ -33,6 +33,26 @@ def backtrack(nums, tempList, results):
                 tempList += num,
                 backtrack(nums, tempList, results)
                 tempList.pop()
+
+from collections import deque
+
+def find_permutations(nums):
+    results = []
+    permutations = deque()
+    permutations.append([])
+    import ipdb; ipdb.set_trace()
+    for currentNum in nums:
+        n = len(permutations)
+        for _ in range(n):
+            oldPermutation = permutations.popleft()
+            for j in range(len(oldPermutation)+1):
+                newPermutation = list(oldPermutation)
+                newPermutation.insert(j, currentNum)
+                if len(newPermutation) == len(nums):
+                    results.append(newPermutation)
+                else:
+                    permutations.append(newPermutation)
+    return results
 
 
 if __name__ == "__main__":
