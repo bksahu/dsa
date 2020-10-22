@@ -40,7 +40,6 @@ def find_permutations(nums):
     results = []
     permutations = deque()
     permutations.append([])
-    import ipdb; ipdb.set_trace()
     for currentNum in nums:
         n = len(permutations)
         for _ in range(n):
