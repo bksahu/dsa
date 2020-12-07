@@ -46,3 +46,4 @@ if __name__ == "__main__":
     print(search_floor_of_a_number([1, 3, 8, 10, 15], key = 12))
     print(search_floor_of_a_number([4, 6, 10], key = 17))
     print(search_floor_of_a_number([4, 6, 10], key = -1))
+    print(search_floor_of_a_number([3, 5], key = 4))
