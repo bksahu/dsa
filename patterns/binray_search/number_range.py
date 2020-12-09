@@ -17,36 +17,30 @@ Input: [1, 3, 8, 10, 15], key = 12
 Output: [-1, -1]
 """
 
-# def number_range(nums, key):
-#     start, end = -1, -1
-#     left, right = 0, len(nums)-1
-#     while left < right:
-#         mid = (left + right) >> 1
-#         if nums[mid] < key:
-#             left = mid + 1
-#         else:
-#             right = mid
-#     start = left
-
-#     if nums[start] != key:
-#         return [-1, -1]
-    
-#     left, right = 0, len(nums)-1
-#     while left < right:
-#         mid = (left + right + 1) >> 1
-#         if nums[mid] > key:
-#             right = mid - 1
-#         else:
-#             left = mid 
-#     end = right
-
-#     return [start, end]
-
 def number_range(nums, key):
-    """
-    4 6 6 6 9
-        ^
-    """
+    start, end = -1, -1
+    left, right = 0, len(nums)-1
+    while left < right:
+        mid = (left + right) >> 1
+        if nums[mid] < key:
+            left = mid + 1
+        else:
+            right = mid
+    start = left
+
+    if nums[start] != key:
+        return [-1, -1]
+    
+    left, right = 0, len(nums)-1
+    while left < right:
+        mid = (left + right + 1) >> 1
+        if nums[mid] > key:
+            right = mid - 1
+        else:
+            left = mid 
+    end = right
+
+    return [start, end]
 
 if __name__ == "__main__":
     print(number_range([4, 6, 6, 6, 9], key = 6))
