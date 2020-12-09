@@ -10,7 +10,7 @@
         },
         {
             "label": "Run File",
-            "command": "python3.8 ${file}",
+            "command": "nodemon ${file}",
             "type": "shell",
             "group": {
                 "kind": "build",
