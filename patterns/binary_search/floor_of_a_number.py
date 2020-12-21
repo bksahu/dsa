@@ -28,18 +28,33 @@ Explanation: There is no number smaller than or equal to '-1' in the given array
 1, 3, 8, 10, 15             12
 0  1  2   3   4
 """
+# def search_floor_of_a_number(nums, key):
+#     left, right = 0, len(nums)-1
+#     if nums[0] > key:
+#         return -1
+
+#     while left < right:
+#         mid = (left + right + 1) >> 1
+#         if key < nums[mid]:
+#             right = mid - 1
+#         else:
+#             left = mid
+#     return left
+
 def search_floor_of_a_number(nums, key):
     left, right = 0, len(nums)-1
     if nums[0] > key:
         return -1
 
-    while left < right:
-        mid = (left + right + 1) >> 1
-        if key < nums[mid]:
-            right = mid - 1
+    while left <= right:
+        mid = (left + right) >> 1
+        if key == nums[mid]:
+            return mid
+        if key > nums[mid]:
+            left = mid + 1
         else:
-            left = mid
-    return left
+            right = mid - 1
+    return right
 
 if __name__ == "__main__":
     print(search_floor_of_a_number([4, 6, 10], key = 6))
