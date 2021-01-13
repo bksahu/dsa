@@ -1,3 +1,15 @@
+"""
+This following script implements Topological Sorting Algorithm using DFS, that works
+only on Directed Acyclic Graphs.
+
+TC: Since each vertex will become source only once and each edge will be added and 
+removed only once. So, Time Complexity will be O(V + E)
+
+SC: The space complexity will be O(V+E)O(V+E), since we are storing all of the edges
+ for each vertex in an adjacency list.
+"""
+
+
 from collections import defaultdict 
     
 class Graph: 
