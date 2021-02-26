@@ -26,3 +26,7 @@ if __name__ == "__main__":
     parent = list(range(n))
     rank = [1]*(n)
     
+    for i in range(n-1):
+        union(nums[i], nums[i+1])
+
+    print(parent)
