@@ -24,5 +24,5 @@ def insertionSort(array):
 
 if __name__ == "__main__":
     array = [random.randint(0, 100) for i in range(10)]
-    print("Beofore Sort: ", array)
+    print("Before Sort: ", array)
     print("After Sort: ", insertionSort(array))
