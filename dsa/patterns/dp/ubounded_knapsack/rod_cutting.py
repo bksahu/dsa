@@ -15,29 +15,33 @@ length   | 1   2   3   4   5   6   7   8
 price    | 3   5   8   9  10  17  17  20
 """
 
-# def cutRod(arr, size):
-#     dp = [[0 for x in range(size+1)] for x in range(size+1)]
-
-#     for i in range(1, size+1):
-#         for j in range(1, size+1):
-#             if i <= j:
-#                 dp[i][j] = max(dp[i-1][j], arr[i-1] + dp[i][j - i])
-#             else:
-#                 dp[i][j] = dp[i-1][j]
-
-#     return dp[-1][-1]
-
 def cutRod(arr, size):
-    dp = [0 for x in range(size+1)]
+    # rows are the rod size. cols are prices
+    dp = [[0 for x in range(size+1)] for x in range(size+1)]
 
     for i in range(1, size+1):
-        _max = -float("inf")
-        for j in range(i):
-            _max = max(_max, arr[j] + dp[i - 1 - j])
-        dp[i] = _max
-        print(dp)
+        for j in range(1, size+1):
+            if i <= j:
+                # maximum between cutting the rod at i and not cutting
+                # the rod. dp[i][j-i] represents the profit of remaining
+                # part
+                dp[i][j] = max(dp[i-1][j], arr[i-1] + dp[i][j - i])
+            else:
+                dp[i][j] = dp[i-1][j]
 
-    return dp[size]
+    return dp[-1][-1]
+
+# def cutRod(arr, size):
+#     dp = [0 for x in range(size+1)]
+
+#     for i in range(1, size+1):
+#         _max = -float("inf")
+#         for j in range(i):
+#             _max = max(_max, arr[j] + dp[i - 1 - j])
+#         dp[i] = _max
+#         print(dp)
+
+#     return dp[size]
 
 if __name__ == "__main__":
     arr = [1, 5, 8, 9, 10, 17, 17, 20] 

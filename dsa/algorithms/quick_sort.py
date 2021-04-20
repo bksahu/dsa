@@ -46,6 +46,7 @@ if __name__ == "__main__":
     print("Before Sort: ", array)
     print("After Sort (Left as pivot): ", quickSortLeft(array.copy()))
 
+    array = [3,2,3,1,2,4,5,5,6]
     print("Before Sort: ", array)
     quickSortRight(array, 0, len(array)-1)
     print("After Sort (Right as pivot): ", array)
