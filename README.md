@@ -10,21 +10,19 @@ Implementation of Data Structures &amp; Algorithms and common coding patterns.
 - [x] Binary Search Tree
 - [x] Trie
 - [ ] AVL
-- [ ] Hashset
-- [ ] Hashmap
 
 ## Algorithms
 - [x] Binary Search
 - [x] Bubble Sort
 - [x] Insertion Sort
 - [x] Selection Sort
-- [ ] Merge Sort
-- [ ] Quick Sort
+- [x] Merge Sort
+- [x] Quick Sort
 - [x] Dijkstra Algorithm
 - [ ] Bellman–Ford
 - [ ] Floyd–Warshall
 - [ ] A* algorithm
-- [ ] KMP
+- [x] KMP
 
 ## Common Patterns
 - [x] Sliding Window
@@ -36,9 +34,9 @@ Implementation of Data Structures &amp; Algorithms and common coding patterns.
 - [x] Breadth First Search
 - [x] Depth First Search
 - [x] Two Heaps
-- [ ] Subsets
-- [ ] Modified Binary Search
-- [ ] Bitwise XOR
-- [ ] Top 'K' Elements
-- [ ] K-way merge
-- [ ] 0/1 Knapsack (Dynamic Programming)
+- [x] Subsets
+- [x] Modified Binary Search
+- [x] Bitwise XOR
+- [x] Top 'K' Elements
+- [x] K-way merge
+- [x] 0/1 Knapsack (Dynamic Programming)
